@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Button } from 'react-native';
+import { View, Button, StyleSheet } from 'react-native';
 
 const LoginScreen = ({ navigation }) => {
   const handleLogin = () => {
@@ -7,10 +7,21 @@ const LoginScreen = ({ navigation }) => {
   };
 
   return (
-    <View>
-      <Button title="Login" onPress={handleLogin} />
+    <View style={styles.container}>
+      <Button style={styles.text} title="Login" onPress={handleLogin} />
     </View>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  text: {
+    fontSize: 30,
+  },
+});
 
 export default LoginScreen;
