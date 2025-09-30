@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet , Button} from 'react-native';
 
-export default function HomeScreen({navigation}) {
+export default function FocusScreen({navigation}) {
     const handleFocus = () =>{
         navigation.navigate('Login')
     }
