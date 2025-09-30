@@ -1,9 +1,11 @@
-import React from 'react';
-import { View, Button, StyleSheet } from 'react-native';
+import React from "react";
+import { View, Button, StyleSheet } from "react-native";
 
 const LoginScreen = ({ navigation }) => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const handleLogin = () => {
-    navigation.navigate('Home');
+    navigation.navigate("Home");
   };
 
   return (
@@ -16,8 +18,8 @@ const LoginScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
   },
   text: {
     fontSize: 30,
