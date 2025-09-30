@@ -1,6 +1,8 @@
 export default {
-  primary: "#007AFF",
-  secondary: "#FF9500",
-  background: "#F2F2F7",
-  text: "#1C1C1E",
+  primary: "#4C6EF5",     
+  secondary: "#FFB020",   
+  background: "#F8FAFC",  
+  text: "#1E293B",        
+  muted: "#94A3B8",       
+  white: "#FFFFFF",
 };
