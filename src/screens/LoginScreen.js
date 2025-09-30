@@ -1,10 +1,16 @@
-import React from "react";
-import { View, Text } from "react-native";
+import React from 'react';
+import { View, Button } from 'react-native';
 
-export default function LoginScreen() {
+const LoginScreen = ({ navigation }) => {
+  const handleLogin = () => {
+    navigation.navigate('Home');
+  };
+
   return (
     <View>
-      <Text>Login Screen</Text>
+      <Button title="Login" onPress={handleLogin} />
     </View>
   );
-}
+};
+
+export default LoginScreen;

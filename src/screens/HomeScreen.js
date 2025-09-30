@@ -1,10 +1,17 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, Button } from "react-native";
 
-export default function HomeScreen() {
+const HomeScreen = ({navigation}) => {
+    const handleHomeScreen =()=>{
+        navigation.navigate('Focus')
+    }
   return (
     <View>
-      <Text>Home Screen - Quiet Space</Text>
+        
+      <Button title="Focus Screen" onPress={handleHomeScreen}/>
+
     </View>
   );
 }
+
+export default HomeScreen
