@@ -12,9 +12,21 @@ export default function AppNavigator() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Login">
-        <Stack.Screen name="Login" component={LoginScreen} />
-        <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="Focus" component={FocusScreen} />
+        <Stack.Screen
+          name="Login"
+          component={LoginScreen}
+          options={{ title: "Welcome to Quiet Space" }}
+        />
+        <Stack.Screen
+          name="Home"
+          component={HomeScreen}
+          options={{ title: "Home" }}
+        />
+        <Stack.Screen
+          name="Focus"
+          component={FocusScreen}
+          options={{ title: "Focus Mode" }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

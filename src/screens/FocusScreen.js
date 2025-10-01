@@ -1,14 +1,10 @@
-import React from 'react';
-import { View, Text, StyleSheet , Button} from 'react-native';
+import React from "react";
+import { View, Text, StyleSheet } from "react-native";
 
-export default function FocusScreen({navigation}) {
-    const handleFocus = () =>{
-        navigation.navigate('Login')
-    }
+export default function FocusScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Focus Screen (Placeholder)</Text>
-      <Button title='LoginScreen' onPress={handleFocus}/>
+      <Text style={styles.text}>Focus Mode Coming Soon ✨</Text>
     </View>
   );
 }
@@ -16,10 +12,10 @@ export default function FocusScreen({navigation}) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: "center",
+    alignItems: "center",
   },
   text: {
-    fontSize: 20,
+    fontSize: 22,
   },
 });
