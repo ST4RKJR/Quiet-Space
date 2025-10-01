@@ -1,12 +1,13 @@
 import React from "react";
-import { View, Text, Button, StyleSheet } from "react-native";
+import { View, Button, StyleSheet } from "react-native";
 
 const HomeScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Welcome to Quiet Space!</Text>
-      <Button title="Go to Focus Mode" onPress={() => navigation.navigate("Focus")} />
-      <Button title="Logout" onPress={() => navigation.navigate("Login")} />
+      <Button title="Chat with a Buddy" onPress={() => navigation.navigate("Chat")} />
+      <Button title="Call a Buddy" onPress={() => navigation.navigate("Call")} />
+      <Button title="Play a Game" onPress={() => navigation.navigate("Game")} />
+      <Button title="Study Focus Mode" onPress={() => navigation.navigate("Focus")} />
     </View>
   );
 };
@@ -14,12 +15,9 @@ const HomeScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
     alignItems: "center",
-  },
-  text: {
-    fontSize: 22,
-    marginBottom: 20,
+    justifyContent: "center",
+    gap: 15,
   },
 });
 

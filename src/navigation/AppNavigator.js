@@ -5,6 +5,9 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import LoginScreen from "../screens/LoginScreen";
 import HomeScreen from "../screens/HomeScreen";
 import FocusScreen from "../screens/FocusScreen";
+import ChatScreen from "../screens/ChatScreen";
+import CallScreen from "../screens/CallScreen";
+import GameScreen from "../screens/GameScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -27,6 +30,15 @@ export default function AppNavigator() {
           component={FocusScreen}
           options={{ title: "Focus Mode" }}
         />
+        <Stack.Screen 
+          name="Chat" 
+          component={ChatScreen} />
+        <Stack.Screen 
+          name="Call" 
+          component={CallScreen} />
+        <Stack.Screen 
+          name="Game" 
+            component={GameScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
